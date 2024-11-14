@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="https://avatars.githubusercontent.com/u/144926525" type="image/x-icon">
+	<title>RGFlbW9uLU1hc3Rlci1YWFhYTC14MTAwLUV4dHJlbWU=</title>
+	<style>
+		html {
+			overflow-y: hidden;
+		}
+		body {
+			/*background-image: url("https://avatars.githubusercontent.com/u/144926525");*/
+			background-color:black;
+		}
+		@keyframes color-change {
+    		0% { color: red; }
+      		14% { color: orange; }
+      		29% { color: yellow; }
+     	 	43% { color: lime; }
+     	 	57% { color: blue; }
+     	 	71% { color: hotpink; }
+     	 	86% { color: lightblue; }
+     	 	100% { color: red; }
+		}
+
+		h2 {
+			animation: color-change 3s steps(1) infinite;
+			text-align: center;
+			font-size: 400%;
+			font-stretch: expanded;
+			transform: translateY(400%);
+			transition: 0.1s;
+			user-select: none;
+		}
+
+		span.stretch {
+    		display:inline-block;
+    		-webkit-transform:scale(0,2); /* Safari and Chrome */
+    		-moz-transform:scale(2,1); /* Firefox */
+    		-ms-transform:scale(2,1); /* IE 9 */
+    		-o-transform:scale(2,1); /* Opera */
+    		transform:scale(5,12); /* W3C */
+		}
+
+	</style>
+</head>
+
+	<!--<p onclick="move()">ew</p>-->
+<body><a href="https://avatars.githubusercontent.com/u/144926525?v=4">
+
+	<h2 id="textoto"><span class="stretch">Daemon</span></h2>
+
+</body></a>
+
+<script>
+i = 0
+while (i < 100) {
+	console.log("ew")
+	move()
+	i++
+}
+var move_delay = "100"
+function move() {
+	document.getElementById("textoto").style.transform = "translateY(350%)"
+	setTimeout(function() {
+		move_back()
+		}, move_delay);
+}
+
+function move_back() {
+	document.getElementById("textoto").style.transform = "translateY(450%)"
+	setTimeout(function() {
+		move()
+		}, move_delay);
+}
+
+</script>
+</html>
